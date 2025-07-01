@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Python Virtual Environments
+/.venv/
+
+# Environment Variables
+# Never commit secret keys or credentials
+/.env
+
+# Caches and Artifacts
+/__pycache__/
+/.ruff_cache/
+/.pytest_cache/
+
+# IDE / Editor specific files
+/.vscode/
+/.idea/
