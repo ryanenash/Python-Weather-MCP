@@ -16,16 +16,13 @@ Run `mise install`
 
 ## UV (recommended)
 
-### Sync (recommended)
+Run `uv sync`
 
-Run `uv pip sync uv.lock`
+### Pip
 
-### Install
-
-Run `uv pip install .`
+Run `pip install .`
 
 # Using as an MCP Server
-
 
 ## Mise
 
@@ -54,5 +51,17 @@ Run `uv pip install .`
             "run",
             "weather.py"
         ],
+}
+```
+
+## Pip 
+
+```
+"python-weather-mcp": {
+    "type": "stdio",
+    "command": "python",
+    "args": [
+        "/ABSOLUTE/PATH/TO/PARENT/FOLDER/Python-Weather-MCP/weather.py"
+    ]
 }
 ```
