@@ -39,7 +39,7 @@ def _format_timestamp(
     return local_dt.strftime(date_format_string)
 
 
-def _format_weather(data: dict, city: str) -> str | None:
+def _format_weather(data: dict) -> str | None:
     """Format weather data into a readable string."""
     try:
         # Basic weather information
@@ -152,7 +152,7 @@ async def get_forecast(city: str) -> str:
         return f"Unable to fetch weather data for {city}. The city may not exist or there might be an API issue."
 
     # Format the weather data
-    weather_report = _format_weather(data, city)
+    weather_report = _format_weather(data)
 
     if weather_report:
         return weather_report

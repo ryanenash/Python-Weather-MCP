@@ -1,5 +1,8 @@
 # Python-Weather-MCP
-Simple weather MCP server
+
+Simple weather MCP server, installs one tool which calls `get_forecast`
+
+`get_forecast` takes in a `str` (city) and returns the current forecast for that city
 
 # Requirements
 
@@ -9,9 +12,8 @@ Simple weather MCP server
 
 # Installing Dependencies
 
-OPENWEATHER_API_KEY
+## Mise (recommended but preference)
 
-## If Using Mise (my preference)
 Run `mise install`
 
 ## UV (recommended)
