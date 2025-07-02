@@ -20,11 +20,16 @@ Run `mise install`
 
 Run `uv sync`
 
-### Pip
+## Pip
 
 Run `pip install .`
 
 # Using as an MCP Server
+
+Add the `JSON` configuration below to the config for the application using the server 
+
+- For VSCode it is in `/Users/NAME/Library/Application Support/Code/User/settings.json`
+- For Claude Desktop it is in `~/Library/Application Support/Claude/claude_desktop_config.json`
 
 ## Mise
 
@@ -34,7 +39,7 @@ Run `pip install .`
     "command": "mise",
         "args": [
             "--cd",
-            "/Users/rnash/Development/Python-Weather-MCP/",
+            "/ABSOLUTE/PATH/TO/PARENT/FOLDER/Python-Weather-MCP",
             "run",
             "app"
         ],
